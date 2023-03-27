@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Shortener</title>
+
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+
+        h1{
+            text-align: center;
+            margin-top: 50px;
+        }
+        .input-container{
+            margin: 50px 50px 0px 50px;
+            text-align: center;
+            background-color: pink;
+            border-radius: 8px;
+            padding: 20px 0px;
+        }
+        input{
+            width: 50%;
+            padding: 20px 20px;
+            border: 2px solid purple;
+            border-radius: 8px;
+            font-size: 22px;
+        }
+        button{
+            padding: 20px 20px;
+            color: white;
+            background-color: purple;
+            border-radius: 8px;
+            font-size: 22px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Short your Any Link</h1>
+    </header>
+
+    <main>
+        <section>
+            <div class="input-container">
+                <input id="input-url-field" type="text" name=""  placeholder="Paste or type your link">
+                <button onclick="shortenUrl()">Shorten it</button>
+            </div>
+            <div id="output-div">
+                
+            </div>
+        </section>
+    </main>
+    
+
+    <script src="js/short-url.js"></script>
+</body>
+</html>
